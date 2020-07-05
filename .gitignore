@@ -1,153 +1,143 @@
-# Reference: https://github.com/github/gitignore
-# From: https://gist.github.com/edesdan/6bb43343740bcd54ef0f56a384a2f66f
+######################
+# Project Specific
+######################
+/build/www/**
+/src/test/javascript/coverage/
+/src/test/javascript/PhantomJS*/
 
 ######################
-###### Mac OS X ######
+# Node
 ######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
 
-# Folder view configuration files
-.DS_Store
-Desktop.ini
+######################
+# SASS
+######################
+.sass-cache/
 
-# Thumbnail cache files
-._*
+######################
+# Eclipse
+######################
+*.pydevproject
+.project
+.metadata
+tmp/
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+/src/main/resources/rebel.xml
+
+# External tool builders
+.externalToolBuilders/**
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Visual Studio Code
+######################
+.vscode/
+
+######################
+# Maven
+######################
+/log/
+/target/
+/wells-fargo-ach-service/target/**
+/wells-fargo-api-client/target/**
+
+######################
+# Gradle
+######################
+.gradle/
+/build/
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+# Windows image file caches
 Thumbs.db
 
-# Files that might appear on external disks
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
 
 ######################
-######   Java   ######
+# Directories
 ######################
+/bin/
+/deploy/
 
-# Compiled class file
-*.class
-
-# Log file
+######################
+# Logs
+######################
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
 
 ######################
-######  Gradle  ######
+# Gradle Wrapper
 ######################
-
-.gradle
-build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
 
 ######################
-###### Intellij ######
+# Maven Wrapper
 ######################
-
-# Created by https://www.gitignore.io/api/intellij
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# User-specific stuff:
-.idea/
-*.iml
-*.iws
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
-
-# Sensitive or high-churn files:
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.xml
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-
-# Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# CMake
-cmake-build-debug/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
-
-## File-based project format:
-*.iws
-
-## Plugin-specific files:
-
-# IntelliJ
-/out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-### Intellij Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
-
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
-
-# Sonarlint plugin
-.idea/sonarlint
-
-# End of https://www.gitignore.io/api/intellij
+!.mvn/wrapper/maven-wrapper.jar
 
 ######################
-######   Maven  ######
+# ESLint
 ######################
-
-**/target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
-
+.eslintcache
